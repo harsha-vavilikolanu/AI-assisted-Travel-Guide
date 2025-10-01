@@ -1,0 +1,49 @@
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+ "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+  <package name="default" extends="struts-default">
+
+    <!-- Hostel booking -->
+    <action name="bookHostel" class="com.example.travel.action.BookingAction" method="bookHostel">
+      <result name="success">/booking-success.jsp</result>
+      <result name="error">/error.jsp</result>
+    </action>
+
+    <!-- Restaurant booking -->
+    <action name="bookRestaurant" class="com.example.travel.action.BookingAction" method="bookRestaurant">
+      <result name="success">/booking-success.jsp</result>
+      <result name="error">/error.jsp</result>
+    </action>
+
+    <!-- Transport planner -->
+    <action name="planTransport" class="com.example.travel.action.TransportAction" method="plan">
+      <result>/transport.jsp</result>
+    </action>
+
+    <!-- Expense tracker -->
+    <action name="addExpense" class="com.example.travel.action.ExpenseAction" method="addExpense">
+      <result>/expense.jsp</result>
+    </action>
+
+    <!-- Chatbot -->
+    <action name="chatbotAction" class="com.example.travel.action.ChatbotAction">
+      <result name="success">/chat.jsp</result>
+    </action>
+
+    <!-- Translator -->
+    <action name="translate" class="com.example.travel.action.TranslateAction">
+      <result name="success">/translate.jsp</result>
+      <result name="input">/translate.jsp</result>
+      <result name="error">/error.jsp</result>
+    </action>
+
+    <!-- 🔹 New Hotel Search -->
+  <!-- TripAdvisor Hotels -->
+<action name="searchHotels" class="com.example.travel.action.HotelAction" method="execute">
+    <result name="success">/hotels.jsp</result>
+    <result name="error">/error.jsp</result>
+</action>
+  
+
+  </package>
+</struts>
