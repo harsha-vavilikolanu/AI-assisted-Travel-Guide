@@ -38,12 +38,11 @@
     </action>
 
     <!-- 🔹 New Hotel Search -->
-  <!-- TripAdvisor Hotels -->
-<action name="searchHotels" class="com.example.travel.action.HotelAction" method="execute">
+ <action name="searchHotels" class="com.example.travel.action.HotelAction">
     <result name="success">/hotels.jsp</result>
     <result name="error">/error.jsp</result>
 </action>
-  
+ 
 
   </package>
 </struts>

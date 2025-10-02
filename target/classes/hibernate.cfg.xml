@@ -5,7 +5,7 @@
 <hibernate-configuration>
   <session-factory>
     <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/travelguide?useSSL=false</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/travel1?useSSL=false</property>
     <property name="hibernate.connection.username">root</property>
     <property name="hibernate.connection.password">swift5898</property>
     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
@@ -13,7 +13,7 @@
     <property name="hibernate.hbm2ddl.auto">update</property>
     <property name="hibernate.show_sql">true</property>
 
-    <mapping class="com.example.travel.model.Hostel"/>
+    <mapping class="com.example.travel.model.Hotel"/>
     <mapping class="com.example.travel.model.Restaurant"/>
     <mapping class="com.example.travel.model.Transport"/>
     <mapping class="com.example.travel.model.Expense"/>
