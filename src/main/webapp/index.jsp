@@ -202,7 +202,9 @@
     <li><a href="expense.jsp">Expense Tracker</a></li>
     <li><a href="translate.jsp">Translator </a></li>
     <li><a href="chat.jsp">Chatbot </a></li>
+    <li><a href="budget-plan.jsp">Budget Planner </a></li>
 </ul>
+
 
 <hr/>
 
